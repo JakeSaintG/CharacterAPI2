@@ -14,17 +14,23 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^14.1.3",
-    "@angular/common": "^14.1.3",
-    "@angular/compiler": "^14.1.3",
-    "@angular/core": "^14.1.3",
-    "@angular/forms": "^14.1.3",
-    "@angular/platform-browser": "^14.1.3",
-    "@angular/platform-browser-dynamic": "^14.1.3",
-    "@angular/platform-server": "^14.1.3",
-    "@angular/router": "^14.1.3",
+    "@angular-slider/ngx-slider": "^2.0.4",
+    "@angular/animations": "^14.3.0",
+    "@angular/cdk": "^14.2.7",
+    "@angular/common": "^14.3.0",
+    "@angular/compiler": "^14.3.0",
+    "@angular/core": "^14.3.0",
+    "@angular/forms": "^14.3.0",
+    "@angular/platform-browser": "^14.3.0",
+    "@angular/platform-browser-dynamic": "^14.3.0",
+    "@angular/platform-server": "^14.3.0",
+    "@angular/router": "^14.3.0",
+    "@healthcatalyst/cashmere": "^14.0.0",
+    "@ng-select/ng-select": "^9.1.0",
     "bootstrap": "^5.2.0",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.6.0",
+    "notosans-fontface": "^1.3.0",
     "oidc-client": "^1.11.5",
     "popper.js": "^1.16.0",
     "run-script-os": "^1.1.6",
@@ -33,9 +39,9 @@
     "zone.js": "~0.11.8"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^14.1.3",
-    "@angular/cli": "^14.1.3",
-    "@angular/compiler-cli": "^14.1.3",
+    "@angular-devkit/build-angular": "^14.2.11",
+    "@angular/cli": "^14.2.11",
+    "@angular/compiler-cli": "^14.3.0",
     "@types/jasmine": "~4.3.0",
     "@types/jasminewd2": "~2.0.10",
     "@types/node": "^18.7.11",
@@ -49,6 +55,5 @@
   },
   "overrides": {
     "autoprefixer": "10.4.5"
-  },
-  "optionalDependencies": {}
+  }
 }
