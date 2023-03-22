@@ -1,0 +1,29 @@
+hc-tile {
+    height: 100%;
+    display: grid;
+}
+
+.details {
+    display: flex;
+    
+    margin: 1rem 0;
+    .title {
+        width: 128px;
+
+        img {
+            margin-left: -1rem;
+        };
+    }
+
+    .team {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+        .title {
+            font-style: italic;
+            font-size: small;
+        }
+    }
+}
+

@@ -1,0 +1,15 @@
+.api-calls {
+    margin-top: 4.8rem;
+
+    h2 {
+        margin-left: 1rem;
+    }
+}
+
+.rest-calls,
+.soap-calls {
+    margin: 0 1rem 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}

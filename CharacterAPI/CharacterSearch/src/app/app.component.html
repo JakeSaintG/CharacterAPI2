@@ -1,0 +1,92 @@
+<hc-navbar
+    appIcon="assets/appIcon.png"
+    brandIcon="https://cashmere.healthcatalyst.net/assets/TriFlame.svg"
+    [fixedTop]="true"
+>
+    <hc-navbar-mobile-menu>
+        <hc-list>
+            <hc-list-item routerLink="" routerLinkActive="active-link">
+                <span hcListLine>Home</span>
+            </hc-list-item>
+        </hc-list>
+        <hr />
+        <hc-list>
+            <a href="https://cashmere.healthcatalyst.net/" target="_blank">
+                <hc-list-item>
+                    <span hcListLine>Cashmere</span>
+                </hc-list-item>
+            </a>
+        </hc-list>
+    </hc-navbar-mobile-menu>
+
+    <hc-navbar-link
+        [active]="true"
+        uri="undefined"
+        linkText="Home"
+    ></hc-navbar-link>
+
+    <hc-icon
+        class="hc-navbar-icon"
+        fontSet="fa"
+        fontIcon="fa-question-circle-o"
+        [hcPop]="options"
+        tabindex="0"
+    ></hc-icon>
+
+    <a href="https://github.com/JakeSaintG" target="_blank">
+        <hc-icon
+            class="hc-navbar-icon"
+            fontSet="fa"
+            fontIcon="fa-github"
+            tabindex="0"
+        >
+        </hc-icon>
+    </a>
+</hc-navbar>
+
+<section class="api-calls">
+    <h2>REST Calls</h2>
+    <div class="rest-calls">
+        <wa-customapi-test></wa-customapi-test>
+    </div>
+</section>
+
+<hc-pop
+    #options
+    [autoCloseOnContentClick]="true"
+    [showArrow]="false"
+    horizontalAlign="end"
+>
+    <div hcMenu>
+        <a
+            hcMenuItem
+            href="https://cashmere.healthcatalyst.net/"
+            target="_blank"
+        >
+            <hc-icon hcMenuIcon fontSet="fa" fontIcon="fa-book"></hc-icon>
+            <span hcMenuText>Cashmere</span>
+        </a>
+        <a hcMenuItem href="https://github.com/JakeSaintG/" target="_blank">
+            <hc-icon hcMenuIcon fontSet="fa" fontIcon="fa-bug"></hc-icon>
+            <span hcMenuText>Report an issue</span>
+        </a>
+    </div>
+</hc-pop>
+
+<hc-pop
+    #user
+    [autoCloseOnContentClick]="true"
+    [showArrow]="false"
+    horizontalAlign="end"
+>
+    <div hcMenu>
+        <button hcMenuItem>
+            <hc-icon
+                hcMenuIcon
+                fontSet="hc-icons"
+                fontIcon="hci-sign-out"
+            ></hc-icon>
+            <span hcMenuText>Log out (WIP)</span>
+        </button>
+    </div>
+</hc-pop>
